@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+		<title>DIW Tarea 06</title>
+	</head>
+	<body>
+		<div class="fondoheader">
+			<div class="header">
+				<h1 class="header__h1">Eadweard Muybridge</h1>
+			</div>
+		</div>
+
+		<div class="contenido">
+			<div class="bio">
+				<h2>Edward James Muggeridge</h2>
+				<img src="recursos/muybridge.jpg" alt="Retrato de Muybridge" class="bio__img"/>
+				<p class="bio__p">(Kingston upon Thames, 9 de abril de 1830-ibídem, 8 de mayo de 1904)</p>
+				<p class="bio__p">Conocido con el seudónimo de Eadweard Muybridge, fue un fotógrafo e investigador británico. Cambió su nombre cuando emigró a los Estados Unidos. Allí se formó y comenzó a trabajar para el Coast and Geodetic Survey.</p>
+				<p class="bio__p">En el año 1872 se le acusó del asesinato del amante de su mujer y, aunque fue absuelto, se vio obligado a viajar durante varios años por América Central y del Sur, donde fotografió la construcción de líneas ferroviarias.</p>
+				<p class="bio__p">En 1878 demostró mediante fotografías que cuando un caballo corre hay un momento en el que ninguna de las patas del animal se apoya en el suelo y durante este instante las dobla hacia dentro.</p>
+				<p class="bio__p">Su trabajo fue de gran importancia para el cine, ya que logró la primera serie de fotografías que descompone el movimiento rápido.</p>
+			</div>
+
+			<div class="obra">
+				<div class="gif">
+					<ul class="navlist">
+						<a onclick="switchGif('gif1')"><li class="navlist__li">Corredor</li></a>
+						<a onclick="switchGif('gif2')"><li class="navlist__li">Gato</li></a>
+						<a onclick="switchGif('gif3')"><li class="navlist__li">Elefante</li></a>
+						<a onclick="switchGif('gif4')"><li class="navlist__li">Elefante (recortado)</li></a>
+					</ul>
+
+					<div id="gif1">
+						<img src="correr.gif" alt="Imagen animada de un hombre corriendo" class="gif__img"/>
+						<p class="gif__p">Al tener tan solo 12 fotogramas, la animación es muy poco fluida y se ven claramente los saltos de un fotograma al siguiente.</p>
+					</div>
+					<div class="cerrado" id="gif2">
+						<img src="gato.gif" alt="Imagen animada de un gato corriendo" class="gif__img"/>
+						<p class="gif__p">Con 20 fotogramas la animación es muy fluida y nos da la sensación perfecta de movimiento.</p>
+					</div>
+					<div class="cerrado" id="gif3">
+						<img src="Eadweard-Muybridge-Elephant.gif" alt="Imagen animada de un elefante caminando" class="gif__img"/>
+						<p class="gif__p">Con 24 fotogramas la animación es muy fluida, y al coincidir el último y el primer fotograma, se produce el efecto de bucle infinito.</p>
+					</div>
+					<div class="cerrado" id="gif4">
+						<img src="Eadweard-Muybridge-Elephant(recortado).gif" alt="Imagen animada de un elefante caminando" class="gif__img"/>
+						<p class="gif__p">Al eliminar los bordes de los fotogramas y estar bastante bien alineados los fotogramas, da la sensación de ser un vídeo.</p>
+					</div>
+				</div>
+
+				<div class="separador"></div>
+
+				<div class="obra__video">
+					<h2 class="obra__video__tit">El propio Muybridge nos lo explica en el siguiente vídeo:</h2>
+					<iframe class="obra__video__frame" src="https://www.youtube.com/embed/n7obYUHYoD4?rel=0&amp;showinfo=0" width="640" height="360" title="Edición de 'Big Buck Bunny para' la tarea 06 de DIW"></iframe>
+						<p><em>Animación de Eadweard Muybridge para la tarea 07 de DIW</em></p>
+					<a class="obra__video__link" href="https://www.youtube.com/watch?v=n7obYUHYoD4" target="blank">Ver el vídeo en Youtube</a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+			function switchGif(id) {
+				document.getElementById("gif1").classList.add("cerrado");
+				document.getElementById("gif2").classList.add("cerrado");
+				document.getElementById("gif3").classList.add("cerrado");
+				document.getElementById("gif4").classList.add("cerrado");
+				document.getElementById(id).classList.remove("cerrado");
+
+			}
+
+		</script>
+	</body>
+</html>

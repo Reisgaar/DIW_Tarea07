@@ -1,0 +1,123 @@
+body {
+    font-family: Verdana;
+    margin: auto;
+    border: 4px solid black;
+    max-width: 1200px;
+    min-width: 900px;
+    background: rgb(42, 42, 42);
+    color: white;
+    text-align: center;
+}
+
+.cerrado {display:none;}
+
+.fondoheader {
+    background: tan;
+}
+  
+.header {
+    display: flex;
+    margin: 0px auto;
+    padding: 15px 0;
+    max-width: 1080px;
+}
+
+.header__h1 {
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    margin: auto;
+    font-size: 5em;
+    color: black;
+}
+
+.contenido{
+    display: flex;
+}
+
+.bio{
+    width: 20%;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    background: #4e4e4e;
+}
+
+.bio__img {
+    width: 150px;
+    margin-left: 5px;
+}
+
+.bio__p {
+    text-align: justify;
+}
+
+.obra{
+    width: 80%;
+    background: #4e422d;
+}
+
+.navlist {
+    background: black;
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navlist a{
+    cursor: pointer;
+}
+  
+.navlist__li {
+    display: inline;
+    padding: 8px 20px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+  
+.navlist__li:hover {
+    background-color: rgb(154 154 154);
+    color: black;
+}
+
+.gif {
+    background: linear-gradient(0deg, transparent, #807053, transparent);
+    margin: 0px auto 50px;
+}
+  
+.gif__img {
+    margin: 30px auto 10px;
+    height: 300px;
+    border: 5px groove tan;
+}
+  
+.gif__p {
+    width: 80%;
+    margin: auto;
+}
+
+.separador {
+    background: linear-gradient(45deg, transparent 10%, tan, transparent 90%);
+    height: 3px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.obra__video {
+    background: linear-gradient(0deg, transparent, #807053, transparent);
+}
+
+.obra__video__frame{
+    border: 8px double black;
+}
+
+.obra__video__tit {
+    font-weight: normal;
+}
+
+.obra__video__link {
+    color: sandybrown;
+}
+
